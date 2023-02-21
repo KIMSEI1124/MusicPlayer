@@ -11,6 +11,7 @@ HTML5 + CSS3 + JS로 만들어본 뮤직 플레이어입니다.<br>
 - [CSS / 애니메이션 / transform / 회전,확대,축소,비틀기 등 형태 변형하는 속성](https://www.codingfactory.net/12593)
 - [San Francisco 웹 폰트](https://foodchain.tistory.com/163)
 - [웹폰트(@font-face) 적용법](https://webdir.tistory.com/56)
+- [w3schools How TO - Flip Card](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 
 ## JS
 - [Javascript/자바스크립트 audio play (오디오 재생) 방법, Audio 객체 예시)](https://mjmjmj98.tistory.com/31)
