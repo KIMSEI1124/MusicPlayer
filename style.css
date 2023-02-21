@@ -70,13 +70,28 @@ body {
     transform: scale(1.1);
 }
 
-.music-pic {
-    margin: 25px;
+.pic-wrapper {
+    margin: 30px;
     height: 300px;
-    width: 290px;
+    width: 80%;
+}
+
+.music-pic {
+    position: relative;
+    border-radius: 10px;
+    height: 300px;
+    width: 270px;
     background-size: cover;
     background-position: center;
     padding-bottom: 20px;
+    transition: all 0.15s;
+    /* transition: all 0.4s; */
+    /* transform-style: preserve-3d; */
+}
+
+.music-pic:hover {
+    transform: scale(1.05);
+    /* transform: rotateY(180deg); */
 }
 
 .music-name,

@@ -1,5 +1,6 @@
 let now_playing = document.querySelector(".now-playing");
 let music_pic = document.querySelector(".music-pic");
+let music_wrapper = document.querySelector(".pic-wrapper");
 let music_name = document.querySelector(".music-name");
 let music_artist = document.querySelector(".artist");
 
@@ -72,18 +73,25 @@ function playStopMusic() {
     playMusic();
   }
 }
+
+// TODO: Stop일 경우 사진크기 0.7 Play를 누르면 0.7 -> 1.05 -> 1.0
+
+// TODO: Play일 경우 사진크기 1.0 Stop를 누르면 1.0 -> 0.7
+
 function playMusic() {
   this_music.play();
   isPlaying = true;
   music_pic.classList.add("rotate");
   playStop_btn.innerHTML = '<i class="fa fa-pause fa-3x"></i>';
 }
+
 function stopMusic() {
   this_music.pause();
   isPlaying = false;
   music_pic.classList.remove("rotate");
   playStop_btn.innerHTML = '<i class="fa fa-play fa-3x"></i>';
 }
+
 function nextMusic() {
   if (music_index < music_list.length - 1) {
     music_index += 1;
@@ -93,6 +101,7 @@ function nextMusic() {
   loadMusic(music_index);
   playMusic();
 }
+
 function preMusic() {
   if (music_index > 0) {
     music_index -= 1;
@@ -102,10 +111,12 @@ function preMusic() {
   loadMusic(music_index);
   playMusic();
 }
+
 function seekTo() {
   let temp = this_music.duration * (music_slider.value / 100);
   this_music.currentTime = temp;
 }
+
 function setVolume() {
   this_music.volume = volume_slider.value / 100;
 }
