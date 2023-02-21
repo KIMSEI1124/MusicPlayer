@@ -1,6 +1,5 @@
 # Music Player
-HTML5 + CSS3 + JS로 만들어본 뮤직 플레이어입니다.<br>
-![gitupload](https://user-images.githubusercontent.com/74192619/220319726-3981f256-cefb-400e-85c1-bb16c19e689f.gif)
+HTML5 + CSS3 + JS로 만들어보는 뮤직 플레이어
 
 # Reference
 ## CSS
@@ -15,8 +14,3 @@ HTML5 + CSS3 + JS로 만들어본 뮤직 플레이어입니다.<br>
 
 ## Import
 - [fontawesome](https://fontawesome.com/search?o=r&m=free)
-
-## Music
-- [Cartoon - On & On (feat. Daniel Levi) [NCS Release]](https://www.youtube.com/watch?v=K4DyBUG242c)
-- [Different Heaven & EH!DE - My Heart [NCS Release]](https://www.youtube.com/watch?v=jK2aIUmmdP4)
-- [Unknown Brain - Superhero (feat. Chris Linton) [NCS Release]](https://www.youtube.com/watch?v=LHvYrn3FAgI)
