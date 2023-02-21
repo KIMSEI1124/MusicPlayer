@@ -166,7 +166,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px 5px 0px;
+    padding-left: 10px;
 }
 
 /* TODO: 위치 고정 필요 */
@@ -199,6 +200,7 @@ body {
 
 /* ---------- Volume ---------- */
 .volume {
+    padding-left: 10px;
     padding-bottom: 20px;
     color: gray;
     transition: all 0.15s;
