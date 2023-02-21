@@ -1,6 +1,7 @@
 # Music Player
 HTML5 + CSS3 + JS로 만들어본 뮤직 플레이어입니다.<br>
-![gitupload](https://user-images.githubusercontent.com/74192619/220341024-85dd1cac-2e07-49e1-9421-8a1abb64efb5.gif)
+![MusicPlayer](https://user-images.githubusercontent.com/74192619/220341589-0ee96b9b-1532-4e03-9f6a-5d2d0a5902c6.gif)
+
 
 
 # Reference
