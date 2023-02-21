@@ -138,17 +138,8 @@ body {
     position: static;
     color: gray;
     transition: all 0.15s;
-    padding: 30px 40px 30px 40px;
+    padding: 20px 25px 20px 25px;
 }
-
-/* .pre-music,
-.next-music {
-    padding: 30px 40px 30px 40px;
-}
-
-.playStop-music {
-    margin: 30px 40px 30px 40px;
-} */
 
 .pre-music:hover,
 .playStop-music:hover,
