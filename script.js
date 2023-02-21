@@ -13,6 +13,7 @@ let volume_slider = document.querySelector(".volume-slider");
 let current_time = document.querySelector(".current-time");
 let total_time = document.querySelector(".total-time");
 let this_music = document.createElement("audio");
+let wave = document.getElementById("wave");
 
 let music_index = 0;
 let isPlaying = false;
@@ -82,15 +83,15 @@ function playStopMusic() {
 function playMusic() {
   this_music.play();
   isPlaying = true;
-  music_pic.classList.add("rotate");
   playStop_btn.innerHTML = '<i class="fa fa-pause fa-3x"></i>';
+  wave.classList.add("loader");
 }
 
 function stopMusic() {
   this_music.pause();
   isPlaying = false;
-  music_pic.classList.remove("rotate");
   playStop_btn.innerHTML = '<i class="fa fa-play fa-3x"></i>';
+  wave.classList.remove("loader");
 }
 
 function nextMusic() {
