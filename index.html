@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/3e599adf22.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+
+<body>
+
+</body>
+<div class="player">
+    <div class="wrapper">
+        <div class="music">
+            <div class="now-playing">Before</div>
+            <div class="music-pic"></div>
+            <div class="music-name">Name</div>
+            <div class="artist">Artist</div>
+        </div>
+        <div class="time">
+            <div class="center">
+                <input type="range" class="music-slider" min="1" max="100" value="0" onchange="seekTo()"
+                    placeholder="music range">
+            </div>
+            <div>
+                <div class="current-time">00:00</div>
+                <div class="total-time">00:00</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="pre-music" onclick="preMusic()"><i class="fa-solid fa-backward fa-2x"></i></div>
+            <div class="playStop-music" onclick="playStopMusic()"><i class="fa-solid fa-play fa-3x"></i></div>
+            <div class="next-music" onclick="nextMusic()"><i class="fa-solid fa-forward fa-2x"></i></div>
+        </div>
+        <div class="volume">
+            <div class="center">
+                <i class="fa-solid fa-volume-off"></i>
+                <input type="range" class="volume-slider" min="0" max="100" value="50" onchange="setVolume()"
+                    placeholder="volume">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

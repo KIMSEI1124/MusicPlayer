@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: SanFrancisco;
+}
+
+.wrapper {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: gray 0px 10px 38px, gray 10px 5px 12px;
+}
+
+/* ---------- Fonts ---------- */
+@font-face {
+    font-family: "SanFrancisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+    font-family: "SanFranciscoBold";
+    font-weight: 700;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+/* ---------- Slider ---------- */
+.volume-slider,
+.music-slider {
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 10px;
+    border-radius: 20px;
+    transition: all 0.15s;
+    margin: 0px 20px;
+}
+
+.music-slider {
+    width: 80%;
+}
+
+.volume-slider {
+    width: 70%;
+}
+
+.volume-slider:hover,
+.time:hover {
+    transform: scale(1.1);
+}
+
+/* ---------- music ---------- */
+.music {
+    text-align: center;
+}
+
+.now-playing {
+    color: gray;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.15s;
+}
+
+.now-playing:hover {
+    color: black;
+    font-family: SanFranciscoBold;
+    transform: scale(1.1);
+}
+
+.music-pic {
+    margin: 25px;
+    height: 300px;
+    width: 290px;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+}
+
+.music-name,
+.artist {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+.music-name {
+    font-family: SanFranciscoBold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.artist {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: bold;
+    transition: all 0.15s;
+}
+
+.time:hover {
+    font-family: SanFranciscoBold;
+    color: black;
+}
+
+.current-time,
+.total-time {
+    font-size: 0.7rem;
+}
+
+.current-time {
+    float: left;
+    padding-left: 10%;
+}
+
+.total-time {
+    text-align: end;
+    padding-right: 10%;
+}
+
+/* ---------- Buttons ---------- */
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 20px 0px;
+}
+
+/* TODO: 위치 고정 필요 */
+
+.pre-music,
+.playStop-music,
+.next-music {
+    position: static;
+    color: gray;
+    transition: all 0.15s;
+    padding: 30px 40px 30px 40px;
+}
+
+/* .pre-music,
+.next-music {
+    padding: 30px 40px 30px 40px;
+}
+
+.playStop-music {
+    margin: 30px 40px 30px 40px;
+} */
+
+.pre-music:hover,
+.playStop-music:hover,
+.next-music:hover {
+    color: black;
+}
+
+/* Music, Volume */
+.center {
+    display: flex;
+    height: 1vh;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+
+/* ---------- Volume ---------- */
+.volume {
+    padding-bottom: 20px;
+    color: gray;
+    transition: all 0.15s;
+}
+
+.volume:hover {
+    color: black;
+}
+
+/* Volume Cursor */
+.volume-slider::-webkit-slider-thumb,
+.music-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0px;
+    height: 10px;
+    box-shadow: -200px 0 0 200px rgb(128, 128, 128);
+    transition: all 0.15s;
+}
+
+.volume-slider::-webkit-slider-thumb:hover,
+.music-slider::-webkit-slider-thumb:hover {
+    box-shadow: -200px 0 0 200px black;
+}
+
+/* Not fill */
+.volume-slider::-webkit-slider-runnable-track,
+.music-slider::-webkit-slider-runnable-track {
+    background: rgb(128, 128, 128, 0.5);
+}
