@@ -122,6 +122,16 @@ function setVolume() {
   this_music.volume = volume_slider.value / 100;
 }
 
+function volume0() {
+  volume_slider.value = 0;
+  setVolume();
+}
+
+function volume100() {
+  volume_slider.value = 100;
+  setVolume();
+}
+
 function setUpdate() {
   let seekPosition = 0;
   if (!isNaN(this_music.duration)) {

@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/3e599adf22.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="favicon.ico">
-    
+
     <title>Music Player</title>
 </head>
 
@@ -60,10 +60,14 @@
         </div>
         <div class="volume">
             <div class="center">
-                <i class="fa-solid fa-volume-off"></i>
+                <div class="volume-0" onclick="volume0()">
+                    <i class="fa-solid fa-volume-off"></i>
+                </div>
                 <input type="range" class="volume-slider" min="0" max="100" value="50" onchange="setVolume()"
                     placeholder="volume">
-                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-100" onclick="volume100()">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
             </div>
         </div>
     </div>
