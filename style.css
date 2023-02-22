@@ -189,25 +189,35 @@ body {
 }
 
 .playStopBtnWrapper {
-    margin: 0px 5px 0px 25px;
-    width: 100px;
-    height: 100px;
+    width: 90px;
     display: block;
 }
 
 .pre-music,
 .playStop-music,
 .next-music {
-    position: static;
+    display: flex;
     color: gray;
     transition: all 0.15s;
-    padding: 20px 25px 35px 25px;
 }
 
+.pre-music,
 .playStop-music {
-    display: block;
-    border: 10px #4286f4;
+    margin: 20px 25px 35px 25px;
 }
+
+.next-music {
+    margin: 20px 25px 35px 10px;
+    padding-right: 5px;
+}
+
+
+
+/* .playStop-music {
+    display: block;
+    width: 36px;
+    border: 1px solid #4286f4;
+} */
 
 .pre-music:hover,
 .playStop-music:hover,
