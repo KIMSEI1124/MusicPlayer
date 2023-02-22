@@ -188,7 +188,12 @@ body {
     padding-left: 5px;
 }
 
-/* TODO: 위치 고정 필요 */
+.playStopBtnWrapper {
+    margin: 0px 5px 0px 25px;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
 
 .pre-music,
 .playStop-music,
@@ -196,7 +201,7 @@ body {
     position: static;
     color: gray;
     transition: all 0.15s;
-    padding: 20px 25px 20px 25px;
+    padding: 20px 25px 35px 25px;
 }
 
 .playStop-music {
@@ -224,7 +229,7 @@ body {
 /* ---------- Volume ---------- */
 .volume {
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     color: gray;
     transition: all 0.15s;
 }
