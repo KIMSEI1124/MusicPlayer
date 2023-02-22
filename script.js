@@ -158,8 +158,22 @@ function setUpdate() {
 
 function random_bg_color() {
   let hex = [
-    "0", "1", "2", "3", "4", "5", "6", "7",
-    "8", "9", "a", "b", "c", "d", "e", "f"
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
   ];
   let a;
 
@@ -178,4 +192,8 @@ function random_bg_color() {
   let gradient =
     "linear-gradient(" + angle + "," + Color1 + ", " + Color2 + ")";
   document.body.style.background = gradient;
+}
+
+function link() {
+  window.open("http://spoti.fi/NCS");
 }
