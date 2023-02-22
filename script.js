@@ -59,6 +59,7 @@ function loadMusic(music_index) {
   updateTimer = setInterval(setUpdate, 1000);
 
   this_music.addEventListener("ended", nextMusic);
+  wave.classList.add("loader");
   random_bg_color();
 }
 
@@ -84,14 +85,12 @@ function playMusic() {
   this_music.play();
   isPlaying = true;
   playStop_btn.innerHTML = '<i class="fa fa-pause fa-3x"></i>';
-  wave.classList.add("loader");
 }
 
 function stopMusic() {
   this_music.pause();
   isPlaying = false;
   playStop_btn.innerHTML = '<i class="fa fa-play fa-3x"></i>';
-  wave.classList.remove("loader");
 }
 
 function nextMusic() {
